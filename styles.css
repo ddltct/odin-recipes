@@ -1,0 +1,77 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*
+    Website CSS 
+  */
+
+  body {
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: 32rem;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 7rem;
+    line-height: 130%;
+    font-weight: 400;
+  }
+
+  h2 a {
+    text-decoration: none;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  a:hover {
+    color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .floating-img {
+    position: fixed;
+    top: 4em; right: 10em;
+    z-index: -1;
+  }
+
+  header, section {
+    max-width: 50%;
+  }
+
+  .recipe-title {
+    font-size: 30rem;
+  }
+
